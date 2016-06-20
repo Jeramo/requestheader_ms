@@ -17,7 +17,7 @@ app.route('/').get(function(req, res) {
      var info = {
          'ip-address': ip,
          'language': req.headers["accept-language"].split(',')[0],
-         'software': req.headers['user-agent']//.split(') ')[0].split(' (')[1]
+         'software': req.headers['user-agent'].split(')')[0]
      };
      res.send(info);
     });
