@@ -1,0 +1,19 @@
+{
+  "name": "requestapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeramo/requestheader_ms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeramo/requestheader_ms/issues"
+  },
+  "homepage": "https://github.com/Jeramo/requestheader_ms#readme"
+}
