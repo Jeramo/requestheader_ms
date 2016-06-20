@@ -16,8 +16,8 @@ app.route('/').get(function(req, res) {
      req.connection.socket.remoteAddress;
      var info = {
          'ip-address': ip,
-         'language': req.headers["accept-language"]//.split(',')[0],
-         ,'software': req.headers['user-agent']//.split(') ')[0].split(' (')[1]
+         'language': req.headers["accept-language"].split(',')[0],
+         'software': req.headers['user-agent']//.split(') ')[0].split(' (')[1]
      };
      res.send(info);
     });
