@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Jeramo/requestheader_ms/issues"
   },
-  "homepage": "https://github.com/Jeramo/requestheader_ms#readme"
+  "homepage": "https://github.com/Jeramo/requestheader_ms#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
 }
