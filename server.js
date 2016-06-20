@@ -10,7 +10,7 @@ var path = require('path');
 var app = express();
 
 app.route('/').get(function(req, res) {
-     var ip = req.headers;
+     var ip = req.headers("HTTP_X_FORWARDED_FOR");
      var info = {
          'ip': ip,
          'lang': req.headers["accept-language"].split(',')[0],
