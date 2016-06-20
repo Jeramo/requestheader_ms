@@ -10,7 +10,7 @@ var path = require('path');
 var app = express();
 
 app.route('/').get(function(req, res) {
-     var ip = req.getHeader("x-forwarded-for");
+     var ip = req.connection.remoteAddress;
      var info = {
          'ip': ip,
          'lang': req.headers["accept-language"].split(',')[0],
